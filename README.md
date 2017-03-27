@@ -1,5 +1,5 @@
 # simplehtmlsecured
-Quickly password-protect a file [via encryption] that's being hosted on your github.io
+Quickly password-protect a file [with encryption] that's being hosted on your github.io
 
 This repo simply explains how to use the Secure HTML 1.6 program in Windows 10 to quickly encrypt an html file and, also shows you how to place that file in your username.github.io repo for public access using the password you choose.
 
