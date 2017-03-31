@@ -86,7 +86,10 @@ Now you have the current root that's loading,
 This should place a new cursor within the JS that starts with ` <!--var _$a=###,_$b=new Array( `,
 #### 5.VIII/ Select-all of this text, and Copy it to OS memory,
 #### 5.IX/ Paste into new File within your editor(or IDE) of choice, my editor is IntelliJ (github.com/JetBrains/intellij-community),
-#### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether and replace with your own passcode dialoge logic,
+#### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether and replace with your own passcode dialogue logic:
+Notice that this JS corresponds directly with the script block that is withing your actual encrypted .html file itself, You should then past this script into your encrypted .html file where you see the following ` <BODY><script language="JavaScript">
+<!--
+var _$a=###,_$b=new Array( `, After updating this file your new Dialogue/Alert Window functionality should be represented on within the served front-end experience at https://handle.github.io/path-to-your-encrypted-html-file
 #### 5.XI/ At this time Brave.com Browser does block your .html file [ Issue - Solve using specific Brave Preferences???? ] -- refer to #6 to handle these issues
 
 
