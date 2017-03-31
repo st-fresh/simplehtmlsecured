@@ -43,7 +43,7 @@ However, you can't access this unless I give you a password, so if you want to s
 
 # #2 Demo in Laymens terms/Directions after sh.exe opens successfully
 ## Reviewing the demo
-#### 2.I/ I started with an interfernce.html file, file was saved using the IntelliJ [github.com/JetBrains/intellij-community]  editor
+#### 2.I/ I started with an interfernce.html file, file was saved using IntelliJ [github.com/JetBrains/intellij-community]  editor
 #### 2.II/ Once saved I used the [ Input ] feature of the sh.exe GUI to browse my directory for the `interference.html` file
 #### 2.III/ Once you select it the field next to [ Input ] in sh.exe GUI should populate with the directory-pathway to the file
 Also, at the same time
@@ -76,21 +76,22 @@ Next you need to obtain a Win10 ISO file,
 
 ### For controlling how your passcode dialogue box fires:
 #### 5.III/ You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
-To do this you must use your for example Chrome DevTools Inspector,
-#### 5.IV/ Once your Inspector is open click on ` #shadow-root open ` to access the root for ` <body> reveal `,
+To do this you must use your for example Chrome DevTools Inspector and an IDE(or Code Editor Program like Sublime/Atom/etc),
+#### 5.IV/ Once your Inspector is open click on ` #shadow-root open ` to access the root called ` <body> reveal `,
 #### 5.V/ Click ` reveal `,
-You will see the JS that controls the all based on ` documet.write() ` method,
+You will see the JS that controls the dialogue is based on ` documet.write() ` method,
 Now you have the current root that's loading, 
 #### 5.VI/ Right-Click on ` <script language="JavaScript"> ` DOM element within your inspectors [ Elements ] tab,
 #### 5.VII/ Choose [ Edit as HTML ],
 This should place a new cursor within the JS that starts with ` <!--var _$a=###,_$b=new Array( `,
 #### 5.VIII/ Select-all of this text, and Copy it to OS memory,
-#### 5.IX/ Paste into new File within your editor of choice, my editor is IntelliJ (github.com/JetBrains/intellij-community),
+#### 5.IX/ Paste into new File within your editor(or IDE) of choice, my editor is IntelliJ (github.com/JetBrains/intellij-community),
 #### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether and replace with your own passcode dialoge logic,
 #### 5.XI/ At this time Brave.com Browser does block your .html file [ Issue - Solve using specific Brave Preferences???? ] -- refer to #6 to handle these issues
 
 
 # #6 Handling Issues
+For now just ping me on twitter @mrdignitty or gitter @st-fresh/st.fresh
 < give troubleshooting resources for Brave etc. >
 
 
