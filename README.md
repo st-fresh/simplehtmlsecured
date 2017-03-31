@@ -42,7 +42,7 @@ However, you can't access this unless I give you a password, so if you want to s
 
 # #2 
 ## Reviewing the demo
-#### 2.I/ I started with an interfernce.html file, file was saved using the IntelliJ editor
+#### 2.I/ I started with an interfernce.html file, file was saved using the IntelliJ [github.com/JetBrains/intellij-community]  editor
 #### 2.II/ Once saved I used the [ Input ] feature of the sh.exe GUI to browse my directory for the `interference.html` file
 #### 2.III/ Once you select it the field next to [ Input ] in sh.exe GUI should populate with the directory-pathway to the file
 Also, at the same time
@@ -55,38 +55,39 @@ You will be warned that you are about to overwrite the existing files data befor
 
 # #3
 # Using you newly encrypted file
-Navigate to your git repo with cd < repo name > in your CLI,
-Make sure the newly encrypted file is within a git repo -- you can copy and paste it from one directory to another just fine,
-Run ` git status ` in CLI to make sure git sees the new addition to your repo,
-Run ` git add -yourPreference ` in CLI to add it to the next commit, 
-Run ` git push origin -yourOrigin ` in CLI to make the file live in your github.io repo to be served at HTTPS,
+#### 3.I/ Navigate to your git repo with cd < repo name > in your CLI,
+#### 3.II/ Make sure the newly encrypted file is within a git repo -- you can copy and paste it from one directory to another just fine,
+#### 3.III/ Run ` git status ` in CLI to make sure git sees the new addition to your repo,
+#### 3.IV/ Run ` git add -yourPreference ` in CLI to add it to the next commit, 
+#### 3.V/ Run ` git push origin -yourOrigin ` in CLI to make the file live in your github.io repo to be served at HTTPS,
 
 # #4
 ## Testing access
-Return to your browser and go to ` https://handle.github.io/path-to-encrypted-html-file-you-uploaded `,
-You should get an alert immediately.. However, on some browsers your alerts are a security risk ! uhoh,
+#### 4.I/ Return to your browser and go to ` https://handle.github.io/path-to-encrypted-html-file-you-uploaded `,
+#### 4.II/ You should get an alert immediately [ enter your password ].. However, on some browsers your alerts are a security risk ! uhoh,
 
-Refer to #4.I if you need to get this working in the Brave browser, OR,
-You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
+# #5 Custom Options
+For VirtualBox in MacOS you need to, 
+Download Virtual Box from: https://www.virtualbox.org/,
+Next you need to obtain a Win10 ISO file, 
+#### 5.I/ If you can't do this on your own then just ping me on gitter (st-fresh) or twitter (mrdignitty) and I will get a working ISO file to you,
+#### 5.III/ You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
 To do this you must use your for example Chrome DevTools Inspector,
-Once your Inspector is open click on ` #shadow-root open ` to access the root for ` <body> reveal `,
-Click ` reveal `,
+#### 5.IV/ Once your Inspector is open click on ` #shadow-root open ` to access the root for ` <body> reveal `,
+#### 5.V/ Click ` reveal `,
 You will see the JS that controls the all based on ` documet.write() ` method,
 Now you have the current root that's loading, 
-Right-Click on ` <script language="JavaScript"> ` DOM element within your inspectors [ Elements ] tab,
-Choose [ Edit as HTML ],
+#### 5.VI/ Right-Click on ` <script language="JavaScript"> ` DOM element within your inspectors [ Elements ] tab,
+#### 5.VII/ Choose [ Edit as HTML ],
 This should place a new cursor within the JS that starts with ` <!--var _$a=###,_$b=new Array( `,
-Select-all of this text, and Copy it to OS memory,
-Paste into new File within your editor of choice, mind is IntelliJ,
+#### 5.VIII/ Select-all of this text, and Copy it to OS memory,
+#### 5.IX/ Paste into new File within your editor of choice, mind is IntelliJ,
 You can now proceed to first compare this to the JS shadow root that you have locally before moving forward, should be exact same,
-Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether,
+#### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether,
 At this time Brave.com Browser does block your .html file
 
 
-# #5
-< explain ISO obtain >
-< explain Virtual Box dl >
-< explain new Win10VM >
+# #6
 < give troubleshooting resources >
 
 
