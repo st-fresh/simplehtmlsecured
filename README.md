@@ -5,6 +5,7 @@ This repo simply explains how to use the Secure HTML 1.6 program in Windows 10 t
 
 ![Alt](http://www.buildwebsite4u.com/tools/img/sh.gif "sh exe program")
 
+# #Prelim 
 Download sh.exe at [link](http://www.buildwebsite4u.com/tools/secure-html.shtml "sh exe download"), or here [link](http://www.buildwebsite4u.com/cgi-bin/t.cgi?sh.exe "Title").
 
 **AGAIN..** this is a guide that shows you how to use the sh.exe program within Windows 10: sh.exe was fully created by BuildWebSite4u.com Copyright © 2002-2017
@@ -61,17 +62,17 @@ You will be warned that you are about to overwrite the existing files data befor
 #### 3.IV/ Run ` git add -yourPreference ` in CLI to add it to the next commit, 
 #### 3.V/ Run ` git push origin -yourOrigin ` in CLI to make the file live in your github.io repo to be served at HTTPS,
 
-# #4 Testing your file encrypted file access
+# #4 Testing your file-encrypted file-access
 ## Testing access
 #### 4.I/ Return to your browser and go to ` https://handle.github.io/path-to-encrypted-html-file-you-uploaded `,
-#### 4.II/ You should get an alert immediately [ enter your password ].. However, on some browsers your alerts are a security risk ! uhoh,
+#### 4.II/ You should get an alert immediately [ enter your password ].. However, on some browsers your alerts are a security risk ! uhoh, refer to #5.XI to find solutions if you're running for example the Brave.com Browser.
 
 # #5 Custom Options 
 ### For VirtualBox in MacOS you need to, 
 Download Virtual Box from: https://www.virtualbox.org/,
 Next you need to obtain a Win10 ISO file, 
 #### 5.I/ If you can't do this on your own then just ping me on gitter (st-fresh) or twitter (mrdignitty) and I will get a working ISO file to you,
-#### 5.II/ In the VirtualBox apps menu on your system use ⌘N to Create a New OS > Choose Your-Name > Choose Type: Microsoft Windows > Choose: Windows 10 64/32-bit depending on your PC > Choose Default Memory Size > Choose Virtual HD > You will be prompted for your ISO file > Browse for your ISO file and attach it to your new OS VM > File will proceed to load when you lauch your new Win10 VM > Now install Win10 > Once in successfully installed Win10 OS navigate to link above in Microsoft Edge Browser > Download sh.exe program > Open sh.exe and then proceed to #2 above to finish creating your encrypted .html files
+#### 5.II/ In the VirtualBox apps menu on your system use ⌘N to Create a New OS > Choose Your-Name > Choose Type: Microsoft Windows > Choose: Windows 10 64/32-bit depending on your PC > Choose Default Memory Size > Choose Virtual HD > You will be prompted for your ISO file > Browse for your ISO file and attach it to your new OS VM > File will proceed to load when you lauch your new Win10 VM > Now install Win10 > Once you've successfully installed Win10 OS and are within it.. navigate to link in this gudie above under [ Prelim ] using Microsoft Edge Browser > Download sh.exe program > Open sh.exe and then proceed to #2 above to finish creating your encrypted .html files
 
 ### For controlling how your passcode dialogue box fires:
 #### 5.III/ You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
@@ -86,10 +87,10 @@ This should place a new cursor within the JS that starts with ` <!--var _$a=###,
 #### 5.VIII/ Select-all of this text, and Copy it to OS memory,
 #### 5.IX/ Paste into new File within your editor of choice, my editor is IntelliJ (github.com/JetBrains/intellij-community),
 #### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether and replace with your own passcode dialoge logic,
-At this time Brave.com Browser does block your .html file [ Issue - Solve using specific Brave Preferences???? ]
+#### 5.XI/ At this time Brave.com Browser does block your .html file [ Issue - Solve using specific Brave Preferences???? ] -- refer to #6 to handle these issues
 
 
-# #6
-< give troubleshooting resources >
+# #6 Handling Issues
+< give troubleshooting resources for Brave etc. >
 
 
