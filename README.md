@@ -42,14 +42,22 @@ However, you can't access this unless I give you a password, so if you want to s
 
 # #2 
 ## Reviewing the demo
-I started with an interfernce.html file, file was saved using the IntelliJ editor,
-Once saved I used the [ Input ] feature of the sh.exe GUI to browse my directory for the `interference.html` file,
-Once you select it the field next to [ Input ] in sh.exe GUI should populate with the directory-pathway to the file,
-Also, at the same time,
-The field next to [ Output ] in the sh.exe GUI will populate with "_interference.html" the directory-pathway for your new file,
-I suggest NOT using this file that starts with "_" because I had weird behavior when my github.io page tried to access and decrypt it,
-Instead I chose this name "interference3.html" and clicked [ Encode ] button at base of sh.exe GUI,
-This will cause the new Output file that you named to show up in the exact same directory,
+I started with an interfernce.html file, file was saved using the IntelliJ editor
+.
+Once saved I used the [ Input ] feature of the sh.exe GUI to browse my directory for the `interference.html` file
+.
+Once you select it the field next to [ Input ] in sh.exe GUI should populate with the directory-pathway to the file
+.
+Also, at the same time
+.
+The field next to [ Output ] in the sh.exe GUI will populate with "_interference.html" the directory-pathway for your new file
+.
+I suggest NOT using this file that starts with "_" because I had weird behavior when my github.io page tried to access and decrypt it
+.
+Instead I chose this name "interference3.html" and clicked [ Encode ] button at base of sh.exe GUI
+.
+This will cause the new Output file that you named to show up in the exact same directory
+.
 ### IF you choose the SAME exact file-name:
 You will be warned that you are about to overwrite the existing files data before saving to the directory with an alert in the sh.exe GUI -- make your choice in dialogue. 
 
