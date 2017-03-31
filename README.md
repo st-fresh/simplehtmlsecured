@@ -72,23 +72,23 @@ You will be warned that you are about to overwrite the existing files data befor
 Download Virtual Box from: https://www.virtualbox.org/,
 Next you need to obtain a Win10 ISO file, 
 #### 5.I/ If you can't do this on your own then just ping me on gitter (st-fresh) or twitter (mrdignitty) and I will get a working ISO file to you,
-#### 5.II/ In the VirtualBox apps menu on your system use ⌘N to Create a New OS > Choose Your-Name > Choose Type: Microsoft Windows > Choose: Windows 10 64/32-bit depending on your PC > Choose Default Memory Size > Choose Virtual HD > You will be prompted for your ISO file > Browse for your ISO file and attach it to your new OS VM > File will proceed to load when you lauch your new Win10 VM > Now install Win10 > Once you've successfully installed Win10 OS and are within it.. navigate to link in this gudie above under [ Prelim ] using Microsoft Edge Browser > Download sh.exe program > Open sh.exe and then proceed to #2 above to finish creating your encrypted .html files
+#### 5.II/ In the VirtualBox apps menu on your system use ⌘N to Create a New OS > Choose Your-Name > Choose Type: Microsoft Windows > Choose: Windows 10 64/32-bit depending on your PC > Choose Default Memory Size > Choose Virtual HD > You will be prompted for your ISO file > Browse for your ISO file and attach it to your new OS VM > File will proceed to load when you lauch your new Win10 VM > Now install Win10 > Once you've successfully installed Win10 OS and are within it.. navigate to link in this gudie above under [ #Prelim ] using Microsoft Edge Browser > Download sh.exe program > Open sh.exe and then proceed to #2 above to finish creating your encrypted .html file(s)
 
 ### For controlling how your passcode dialogue box fires:
-#### 5.III/ You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
-To do this you must use your for example Chrome DevTools Inspector and an IDE(or Code Editor Program like Sublime/Atom/etc),
-#### 5.IV/ Once your Inspector is open click on ` #shadow-root open ` to access the root called ` <body> reveal `,
+#### 5.III/ You can rewrite how your encrypted file displays the password input-field by editing the contents of the Shadow Root of the DOCUMENT BODY,
+To do this you must use your (for example) Chrome DevTools (sorry Mozilla-lovers!) Inspector and an IDE(or Code Editor Program like Sublime/Atom/VSCode/IntelliJ/etc),
+#### 5.IV/ Once your Web-Inspector is open (within the [Elements] tab) click on ` #shadow-root open ` to access the root called ` <body> reveal `,
 #### 5.V/ Click ` reveal `,
 You will see the JS that controls the dialogue is based on ` documet.write() ` method,
-Now you have the current root that's loading, 
+Now you have the current shadow-root that's loading, 
 #### 5.VI/ Right-Click on ` <script language="JavaScript"> ` DOM element within your inspectors [ Elements ] tab,
 #### 5.VII/ Choose [ Edit as HTML ],
 This should place a new cursor within the JS that starts with ` <!--var _$a=###,_$b=new Array( `,
 #### 5.VIII/ Select-all of this text, and Copy it to OS memory,
 #### 5.IX/ Paste into new File within your editor(or IDE) of choice, my editor is IntelliJ (github.com/JetBrains/intellij-community),
-#### 5.X/ Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether and replace with your own passcode dialogue logic:
-Notice that this JS corresponds directly with the ` <script language="JavaScript"> ` block of code that is within your actual encrypted .html file itself, so,  You should then pass this script into your encrypted .html file where you see the following ` <BODY><script language="JavaScript"> <!-- var _$a=###,_$b=new Array( `, and, After updating this file your new Dialogue/Alert Window functionality should be represented within the served front-end experience @ https://handle.github.io/path-to-your-encrypted-html-file
-#### 5.XI/ At this time Brave.com Browser does block your .html file [ Issue - Solve using specific Brave Preferences???? ] -- refer to #6 to handle these issues
+#### 5.X/ Proceed then within this newly created file to make your changes to the Dialogue/Alert window behavior, or remove it altogether and replace with your own passcode dialogue/alert window logic:
+Notice that this JS corresponds directly with the ` <script language="JavaScript"> ` block of code that is within your actual encrypted .html file itself, so,  You should then pass this (copy-paste this) script into your encrypted .html file where you see the following ` <BODY><script language="JavaScript"> <!-- var _$a=###,_$b=new Array( `, and, After updating this file your new Dialogue/Alert Window functionality should be represented within the served front-end experience @ https://handle.github.io/path-to-your-encrypted-html-file
+#### 5.XI/ At this time Brave.com Browser blocks your .html file [ Issue - Solve using specific Brave Preferences???? ] -- refer to #6 to handle these issues
 
 
 # #6 Handling Issues
