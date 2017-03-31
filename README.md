@@ -35,3 +35,58 @@ where...
 * -c - Encode and Exit.
 If a filename contains spaces, enclose the entire filename in quotation marks. For example,
 `sh -i"c:\Program Files\in.htm" -o"c:\Program Files\out.htm" -p12345 -c`
+
+# #1 
+Currently you can see this in action at the following link: https://st-fresh.github.io/interference/mobile/interference3.html
+However, you can't access this unless I give you a password, so if you want to see the demo then ping me on twitter @mrdignitty (you need a working github account and reason to view). 
+
+# #2 
+## Reviewing the demo
+I started with a interfernce.html file, file was saved using the IntelliJ editor,
+Once saved I used the [ Input ] feature of the sh.exe GUI to browse my directory for the interference.html file,
+Once you select it the field next to [ Input ] in sh.exe GUI should populate with the directory-pathway to the file,
+Also, at the same time,
+The field next to [ Output ] in the sh.exe GUI will populate with "_interference.html" directory-pathway for new file,
+I suggest NOT using this file that starts with "_" because I had weird behavior when my github.io page tried to access and decrypt it,
+Instead I chose this name "interference3.html" and clicked [ Create ] button at base of sh.exe GUI,
+This will cause a new file to show up in the exact same directory,
+IF you choose the SAME exact file-name,
+You will be warned that you are about to overwrite the existing files data before saving to the directory with an alert in the sh.exe GUI.
+
+# #3
+# Using you newly encrypted file
+Navigate to your git repo with cd < repo name > in your CLI,
+Make sure the newly encrypted file is within a git repo -- you can copy and paste it from one directory to another just fine,
+Run ` git status ` in CLI to make sure git sees the new addition to your repo,
+Run ` git add -yourPreference ` in CLI to add it to the next commit, 
+Run ` git push origin -yourOrigin ` in CLI to make the file live in your github.io repo to be served at HTTPS,
+
+# #4
+## Testing access
+Return to your browser and go to ` https://handle.github.io/path-to-encrypted-html-file-you-uploaded `,
+You should get an alert immediately.. However, on some browsers your alerts are a security risk ! uhoh,
+
+Refer to #4.I if you need to get this working in the Brave browser, OR,
+You can rewrite how your encrypted file displays the password field by editing the contents of the Shadow Root of the DOCUMENT BODY,
+To do this you must use your for example Chrome DevTools Inspector,
+Once your Inspector is open click on ` #shadow-root open ` to access the root for ` <body> reveal `,
+Click ` reveal `,
+You will see the JS that controls the all based on ` documet.write() ` method,
+Now you have the current root that's loading, 
+Right-Click on ` <script language="JavaScript"> ` DOM element within your inspectors [ Elements ] tab,
+Choose [ Edit as HTML ],
+This should place a new cursor within the JS that starts with ` <!--var _$a=###,_$b=new Array( `,
+Select-all of this text, and Copy it to OS memory,
+Paste into new File within your editor of choice, mind is IntelliJ,
+You can now proceed to first compare this to the JS shadow root that you have locally before moving forward, should be exact same,
+Proceed then within this newly created file to make your changes to the Alert window behavior, or remove it altogether,
+At this time Brave.com Browser does block your .html file
+
+
+# #5
+< explain ISO obtain >
+< explain Virtual Box dl >
+< explain new Win10VM >
+< give troubleshooting resources >
+
+
