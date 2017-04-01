@@ -38,7 +38,7 @@ If a filename contains spaces, enclose the entire filename in quotation marks. F
 `sh -i"c:\Program Files\in.htm" -o"c:\Program Files\out.htm" -p12345 -c`
 
 # #1 in Demo/Correct Functionality ( End-Results you should get yourself! mmhmm )
-Currently you can see this in action at the following link: https://st-fresh.github.io/interference/mobile/interference3.html
+Currently you can see this in action at the following link: https://st-fresh.github.io/ [click a link],
 However, you can't access this unless I give you a password, so if you want to see the demo then ping me on twitter @mrdignitty (you need a working github account and reason to view). 
 
 # #2 Demo in Laymens terms/Directions after sh.exe opens successfully
